@@ -1,0 +1,682 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container input,
+.login-container select,
+.login-container button {
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.login-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #007bff;
+  padding: 20px;
+  color: white;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.dashboard-content {
+  flex-grow: 5;
+  padding: 50px;
+  position: relative;
+}
+
+.logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+.tournament-management-container,
+.user-management-container {
+  max-width: 450px;
+  margin: 0 auto;
+  align-content: center;
+  margin-top: 10%;
+}
+
+.form-container {
+  width: 400px;
+  margin: 0 auto 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+  width: 90%;
+  margin-bottom: 10px;
+  flex-direction: column;
+  padding:10px ;
+}
+
+.input-field label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.input-field input,
+.input-field select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.create-button{
+  width: 20%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  white-space: break-spaces;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.submit-button {
+  width: 10%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  white-space: break-spaces;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.create-button:hover,
+.submit-button:hover {
+  background-color: #FCDF72;
+}
+
+.tournament-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.tournament-item p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.tournament-item button {
+  padding: 8px 16px;
+  margin-top: 8px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.tournament-item button:last-child {
+  margin-right: 0;
+}
+
+.edit-button,
+.delete-button,
+.manage-button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+.delete-button {
+  background-color: #f44336;
+}
+
+.delete-button:hover {
+  background-color: #da190b;
+}
+
+.user-management-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.users-list {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.user-item {
+  border-bottom: 1px solid #eee;
+}
+
+.user-item:last-child {
+  border-bottom: none;
+}
+
+.manage-user-modal {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.role-selection {
+  margin-top: 10px;
+}
+
+.role-selection select {
+  margin-left: 10px;
+}
+
+.save-button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.save-button:hover {
+  background-color: #007B9A;
+}
+
+.match-management-container {
+  display: flex;
+  gap: 20px;
+}
+
+.matches-list {
+  flex: 1;
+}
+
+.match-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.match-edit-form {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.match-edit-form input,
+.match-edit-form select {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.start-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover {
+  background-color: #45a049;
+}
+.tournament-selector {
+  margin-bottom: 20px;
+}
+
+.tournament-selector select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.team-management-form {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.team-name-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.team-name-input:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+}
+
+.team-save-button, .add-player-button, .remove-player-button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.team-save-button:hover, .add-player-button:hover, .remove-player-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.team-dropdown {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.team-players-list {
+  margin-top: 20px;
+}
+
+.player-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.player-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.remove-player-button {
+  background-color: var(--red-color);
+  padding: 5px 10px;
+}
+
+.remove-player-button:hover {
+  background-color: var(--hover-red-color);
+}
+.user-management-container {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-management-container h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 10px;
+
+}
+
+.search-input:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 5px var(--secondary-color);
+}
+
+.users-list {
+  margin-top: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 10px;
+  background-color: var(--white);
+}
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--background-color);
+}
+
+.user-item:last-child {
+  border-bottom: none;
+}
+
+.user-item span {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.manage-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.manage-button:hover {
+  background-color: #218838;
+}
+
+.manage-user-modal {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.manage-user-modal h3 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.user-data p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.role-selection {
+  margin-top: 20px;
+}
+
+.role-selection label {
+  font-size: 14px;
+  color: var(--text-color);
+  margin-right: 10px;
+}
+
+.role-selection select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+}
+
+.save-button {
+  margin-top: 20px;
+  background-color: #ff8c00;
+  color: var(--white);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.save-button:hover {
+  background-color: #e67600;
+}
+.tournament-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2px;
+  padding: 25px;
+  margin-bottom: 10px;
+}
+
+.tournament-item {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 350px;
+}
+
+.tournament-item:hover {
+  transform: translateY(-5px);
+}
+
+.tournament-item h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.tournament-item p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.tournament-item button {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 14px;
+}
+
+.edit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+.start-button {
+  background-color: #2196F3;
+  color: white;
+  display: inline-block;
+}
+
+.start-button:hover {
+  background-color: #1e88e5;
+}
+
+.tournament-item .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.registration-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.registration-modal h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.search-container {
+  margin-bottom: 15px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.tournaments-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.tournament-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+  width: 10%;
+}
+
+.register-button:hover {
+  background-color: #1976D2;
+}
+.add-button{background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+  width: 40%;}
+
+.register-tournament-button{
+  background-color: #007bff;
+  padding: 8px 12px;
+  color: white;
+}
+.message-field{
+  width: 90%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  padding:10px ;
+}
+
