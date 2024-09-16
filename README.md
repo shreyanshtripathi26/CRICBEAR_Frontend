@@ -101,3 +101,8 @@ To run both dashboards at the same time, you'll need to open two terminal window
    ```
 
 Note: You may need to configure different ports for each application if they both try to use the same default port.
+
+## Contributions 
+- Dashboard for admin and coach ( Shreyansh)
+- Public Dashboard (Shreyansh and Rakshitha)
+- Integration of frontend and backend (Aniketh, Shreyansh and Rakshitha.)
