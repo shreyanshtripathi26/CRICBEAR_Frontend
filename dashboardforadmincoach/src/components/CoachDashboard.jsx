@@ -4,7 +4,6 @@ import '../styles.css';
 
 function CoachDashboard() {
     const navigate = useNavigate();
-
     // Handle user logout
     const handleLogout = () => {
         navigate('/login');

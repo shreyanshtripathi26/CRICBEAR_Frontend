@@ -3,7 +3,7 @@ import { Accordion, AccordionSummary, AccordionDetails, Typography, Button, Circ
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Table, TableHead, TableRow, TableCell, TableBody } from '@mui/material';
 
-import { getAllTournaments, getMatchesByTournamentId } from '../ApiService';
+import { getAllTournaments, getMatchesByTournamentId } from '../ApiService.js';
 
 function Tournament() {
     // State variables for managing tournament data and UI

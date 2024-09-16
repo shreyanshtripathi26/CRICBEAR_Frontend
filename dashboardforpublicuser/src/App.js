@@ -1,19 +1,21 @@
+// src/App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './Components/Navbar/Navbar';
-import Tournament from './Components/Tournament';
-import MatchesPage from './Components/MatchesPage';
-import TeamsPage from './Components/TeamsPage';
-import PlayerProfilePage from './Components/PlayerProfilePage';
-import LiveMatchPage from './Components/LiveMatchPage';
+import NavBar from './Components/Navbar/Navbar.js';
 
-// Main App component defining the routing structure for the public-facing part of the application
+import Tournament from './Components/Tournament.js';
+import MatchesPage from './Components/MatchesPage.js';
+import TeamsPage from './Components/TeamsPage.js';
+import PlayerProfilePage from './Components/PlayerProfilePage.js';
+import LiveMatchPage from './Components/LiveMatchPage.js';
+
+
 function App() {
     return (
         <Router>
-            <Navbar />
+            <NavBar />
             <Routes>
-                {/* Define routes for various pages */}
                 <Route path="/tournaments" element={<Tournament />} />
                 <Route path="/matches" element={<MatchesPage />} />
                 <Route path="/teams" element={<TeamsPage />} />

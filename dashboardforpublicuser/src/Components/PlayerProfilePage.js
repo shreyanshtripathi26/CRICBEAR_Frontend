@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Typography, Paper, Grid, TextField } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { getAllPlayers } from '../ApiService';
+import { getAllPlayers } from '../ApiService.js';
 
 // Styled component for player profile box
 const PlayerBox = styled(Paper)(({ theme }) => ({

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, TextField, InputAdornment, Dialog, DialogTitle, DialogContent, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from '@mui/icons-material/Search.js';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-import { getAllTeams, getPlayersByTeamId } from '../ApiService'; // Import the API functions
+import { getAllTeams, getPlayersByTeamId } from '../ApiService.js'; // Import the API functions
 
 // Styled Table component with Material-UI
 const StyledTable = styled(Table)(({ theme }) => ({

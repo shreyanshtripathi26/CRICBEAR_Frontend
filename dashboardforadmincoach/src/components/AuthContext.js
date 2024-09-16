@@ -5,13 +5,13 @@ export const AuthContext = createContext();
 
 // AuthProvider component to wrap the app with user authentication context
 export const AuthProvider = ({ children }) => {
-    const [currentUser, setCurrentUser] = useState(null);  // State to hold the currently logged-in user
+    const [currentUser, setCurrentUser] = useState(null);// State to hold the currently logged-in user
 
     useEffect(() => {
         // Check for a stored user in localStorage when the app loads and set it
         const storedUser = localStorage.getItem('user');
         if (storedUser) {
-            setCurrentUser(JSON.parse(storedUser));  // Parse and set the stored user
+            setCurrentUser(JSON.parse(storedUser)); // Parse and set the stored user
         }
     }, []);
 

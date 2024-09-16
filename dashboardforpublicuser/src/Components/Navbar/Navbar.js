@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 
 import MenuItem from '@mui/material/MenuItem';
-import SportsCricketIcon from '@mui/icons-material/SportsCricket'; // Ball icon
+import SportsCricketIcon from '@mui/icons-material/SportsCricket.js'; // Ball icon
 import { Link } from 'react-router-dom'; // Import Link for navigation
 
 const pages = ['MATCHES', 'TEAMS', 'Player Profile', 'Tournaments'];

@@ -47,7 +47,22 @@
   },
   "description": "Dashboard for Public User",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "babel-jest": "^29.7.0",
+    "jest": "^27.5.1",
+    "react-test-renderer": "^18.3.1",
+    "jest-environment-jsdom": "^29.7.0" 
+  }, 
+  "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules/(?!axios)/" 
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest"  
+    }
+  },
   "author": "",
   "license": "ISC"
 }
