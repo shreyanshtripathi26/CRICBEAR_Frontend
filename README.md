@@ -17,12 +17,10 @@ CRICBEAR_Frontend/
    git clone https://github.com/shreyanshtripathi26/CRICBEAR_Frontend.git
    cd CRICBEAR_Frontend
    ```
-
 2. Choose which dashboard you want to run (admin/coach or public user)
+3. Follow the setup, running, and testing instructions for the chosen dashboard as detailed below
 
-3. Follow the setup and running instructions for the chosen dashboard as detailed below
-
-## Setup and Running
+## Setup, Running, and Testing
 
 ### 1. Dashboard for Admin and Coach
 
@@ -32,15 +30,17 @@ Located in the `dashboardforadmincoach` directory.
    ```
    cd dashboardforadmincoach
    ```
-
 2. Install dependencies:
    ```
    npm install
    ```
-
 3. Start the application:
    ```
    npm start
+   ```
+4. Run tests:
+   ```
+   npm test
    ```
 
 #### Functionality
@@ -66,15 +66,17 @@ Located in the `dashboardforpublicuser` directory.
    ```
    cd dashboardforpublicuser
    ```
-
 2. Install dependencies:
    ```
    npm install
    ```
-
 3. Start the application:
    ```
    npm start
+   ```
+4. Run tests:
+   ```
+   npm test
    ```
 
 #### Functionality
@@ -102,7 +104,24 @@ To run both dashboards at the same time, you'll need to open two terminal window
 
 Note: You may need to configure different ports for each application if they both try to use the same default port.
 
+## Testing Both Dashboards
+
+To run tests for both dashboards, use separate terminal windows or tabs:
+
+1. For the admin/coach dashboard:
+   ```
+   cd CRICBEAR_Frontend/dashboardforadmincoach
+   npm test
+   ```
+
+2. For the public user dashboard:
+   ```
+   cd CRICBEAR_Frontend/dashboardforpublicuser
+   npm test
+   ```
+
 ## Contributions 
-- Dashboard for admin and coach ( Shreyansh)
+
+- Dashboard for admin and coach (Shreyansh)
 - Public Dashboard (Shreyansh and Rakshitha)
-- Integration of frontend and backend (Aniketh, Shreyansh and Rakshitha.)
+- Integration of frontend and backend (Aniketh, Shreyansh and Rakshitha)
