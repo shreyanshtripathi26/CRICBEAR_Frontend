@@ -124,4 +124,21 @@ To run tests for both dashboards, use separate terminal windows or tabs:
 
 - Dashboard for admin and coach (Shreyansh)
 - Public Dashboard (Shreyansh and Rakshitha)
+   - #### Shreyansh
+      - Live Matches
+        - Ball by Ball Updates
+        - Live Score Card
+        - Scorecards
+          - Innings 1
+          - Innings 2
+      - Tournaments
+      - Search Bar
+   
+  - #### Rakshitha
+      - Teams
+      - Player Profiles
+      - Tournaments
+      - Matches
+        - Upcoming Matches
+        - Completed Matches
 - Integration of frontend and backend (Aniketh, Shreyansh and Rakshitha)
